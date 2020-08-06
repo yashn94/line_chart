@@ -23,7 +23,7 @@ line <- provinces_selection %>% ggplot(aes(x= Cumulative, y= Count, group=Provin
   geom_segment(aes(xend = 200000, yend = Count), linetype = 2, colour = 'grey')+
   geom_text(aes(x = 200000.1, label = Province), hjust = 0)+
   theme_minimal() +
-  theme(plot.margin = margin(5.5, 100, 5.5, 5.5))  +
+  theme(plot.margin = margin(5.5, 102, 5.5, 5.5))  +
   theme(legend.position = "none") +
   coord_cartesian(clip = "off")+
   #scales and axes
@@ -52,8 +52,8 @@ animate(line, fps=6, width = 800, height = 500,  end_pause = 40, renderer = gifs
 
 
 # Save at gif:
-anim_save(filename = "provinces_.gif", save_animation = "gif")
+anim_save(filename = "provinces2.gif", save_animation = "gif")
 
 ```
 
-![](provinces_.gif)
+![](provinces2.gif)
